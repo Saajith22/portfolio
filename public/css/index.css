@@ -15,10 +15,17 @@ body {
 .bi {
   color: white;
   cursor: url("../images/hover.cur"), auto;
+  transition: all 1s ease;
+}
+
+.bi:hover {
+    color: rgb(32, 206, 206);
+    padding: 5px; 
+    transition: all 1s ease;
 }
 
 .line {
-  background-color: rgb(26, 214, 214);
+  background-color: rgb(53, 175, 175);
   width: 100%;
 }
 
