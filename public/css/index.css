@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+html {
+  cursor: url("../images/cursor.cur"), auto;
+  min-height: 100%;
+}
+
+body {
+  background-color: rgb(41, 41, 41) !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.bi {
+  color: white;
+  cursor: url("../images/hover.cur"), auto;
+}
+
+.line {
+  background-color: rgb(26, 214, 214);
+  width: 100%;
+}
+
+.code {
+  font-family: "Fira Code", monospace;
+  color: rgb(16, 238, 182);
+}
