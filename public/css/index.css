@@ -50,3 +50,9 @@ i {
   text-decoration-color: white;
   color: white;
 }
+
+.citation {
+  transition: all 1s;
+  color: rgb(11, 225, 104);
+  text-decoration: underline;
+}
