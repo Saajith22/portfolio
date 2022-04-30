@@ -11,7 +11,7 @@ window.addEventListener("mousemove", (mouse) => {
 });*/
 
 const citation = document.getElementsByClassName("citation")[0];
-const text = ["Coder", "Software Engineer", "Freelancer"];
+const text = ["Coder", "Software Engineer", "Freelancer", "Full Stack Developer", "Developer"];
 let itemIndex = 0;
 
 const removeText = () => {
@@ -24,7 +24,7 @@ const removeText = () => {
       citation.innerHTML = str;
       setTimeout(() => {
         check();
-      }, 300);
+      }, 200);
     } else {
       setTimeout(() => addText(), 3000);
     }
@@ -48,10 +48,21 @@ const addText = () => {
       citation.innerHTML = str;
       setTimeout(() => {
         check();
-      }, 300);
+      }, 200);
     } else {
       setTimeout(() => removeText(), 3000);
     }
   };
   check();
 };
+
+//scroll
+function moveDown() {
+  const arrow = document.getElementsByClassName("arrow-holder")[0];
+  arrow.classList.add("rotate");
+
+  const hidden = document.getElementsByClassName("hidden");
+  for(const hide of hidden) {
+    hide.className = "active";
+  }
+}

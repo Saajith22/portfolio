@@ -28,6 +28,28 @@ fs.readdirSync("./routes").forEach((route) => {
   console.log(`Project Route Loaded: ${route}`);
 });
 
+/*const data = {
+  "one": ["5IGOuGUaVx"],
+  "three": ["kFYAyUXBIE"],
+  "four": ["BzxMjluRmL", "xrLZyewuGZ", "CJnedPPxyl"],
+  "five": ["xvBE6IeGOn", "TWPzSEZFum"],
+  "six": ["YJIWFHLinF", "ZHYRBRTwnw"],
+};
+
+let keys = Object.keys(data);
+const final = keys.map((k) => {
+  let codes = data[k];
+  let str = "";
+  for (const code of codes) {
+    let random = Math.floor(Math.random() * code.length);
+    str += code[random];
+  }
+
+  return str;
+});
+
+console.log(final.join(""));*/
+
 mongo
   .connect(process.env.mongo, {
     useNewUrlParser: true,
